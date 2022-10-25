@@ -1,0 +1,158 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = #1082#1085#1086#1087#1082#1080' Win32'
+  ClientHeight = 693
+  ClientWidth = 1272
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TabControl1: TTabControl
+    Left = 768
+    Top = 32
+    Width = 289
+    Height = 193
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 440
+    Top = 32
+    Width = 289
+    Height = 193
+    TabOrder = 1
+  end
+  object TrackBar1: TTrackBar
+    Left = 440
+    Top = 256
+    Width = 150
+    Height = 45
+    TabOrder = 2
+  end
+  object ProgressBar1: TProgressBar
+    Left = 624
+    Top = 256
+    Width = 150
+    Height = 16
+    TabOrder = 3
+  end
+  object UpDown1: TUpDown
+    Left = 816
+    Top = 256
+    Width = 16
+    Height = 89
+    TabOrder = 4
+  end
+  object HotKey1: THotKey
+    Left = 872
+    Top = 272
+    Width = 121
+    Height = 19
+    HotKey = 32833
+    TabOrder = 5
+  end
+  object Animate1: TAnimate
+    Left = 440
+    Top = 320
+    Width = 100
+    Height = 80
+  end
+  object DateTimePicker1: TDateTimePicker
+    Left = 848
+    Top = 379
+    Width = 186
+    Height = 21
+    Date = 44738.000000000000000000
+    Time = 0.893300659721717200
+    TabOrder = 7
+  end
+  object MonthCalendar1: TMonthCalendar
+    Left = 619
+    Top = 312
+    Width = 191
+    Height = 161
+    Date = 44738.000000000000000000
+    TabOrder = 8
+  end
+  object TreeView1: TTreeView
+    Left = 896
+    Top = 448
+    Width = 121
+    Height = 97
+    Indent = 19
+    TabOrder = 9
+  end
+  object ListView1: TListView
+    Left = 136
+    Top = 64
+    Width = 250
+    Height = 150
+    Columns = <>
+    TabOrder = 10
+  end
+  object HeaderControl1: THeaderControl
+    Left = 0
+    Top = 0
+    Width = 1272
+    Height = 17
+    Sections = <>
+    ExplicitLeft = 400
+    ExplicitTop = 424
+    ExplicitWidth = 0
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 674
+    Width = 1272
+    Height = 19
+    Panels = <
+      item
+        Width = 50
+      end>
+    ExplicitLeft = 352
+    ExplicitTop = 400
+    ExplicitWidth = 0
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 17
+    Width = 1272
+    Height = 29
+    Caption = 'ToolBar1'
+    TabOrder = 13
+    ExplicitLeft = -80
+    ExplicitTop = 337
+  end
+  object CoolBar1: TCoolBar
+    Left = 0
+    Top = 46
+    Width = 1272
+    Height = 75
+    Bands = <>
+    ExplicitLeft = 440
+    ExplicitTop = 488
+    ExplicitWidth = 150
+  end
+  object PageScroller1: TPageScroller
+    Left = 416
+    Top = 448
+    Width = 150
+    Height = 45
+    TabOrder = 15
+  end
+  object ComboBoxEx1: TComboBoxEx
+    Left = 241
+    Top = 256
+    Width = 145
+    Height = 22
+    ItemsEx = <>
+    TabOrder = 16
+    Text = 'ComboBoxEx1'
+  end
+end

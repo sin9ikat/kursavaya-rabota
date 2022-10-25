@@ -1,0 +1,229 @@
+object Form13: TForm13
+  Left = 0
+  Top = 0
+  Caption = #1050#1086#1084#1087#1086#1085#1077#1085#1090#1099' Additional'
+  ClientHeight = 693
+  ClientWidth = 1272
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object SpeedButton1: TSpeedButton
+    Left = 480
+    Top = 80
+    Width = 65
+    Height = 65
+  end
+  object Image1: TImage
+    Left = 480
+    Top = 248
+    Width = 105
+    Height = 105
+  end
+  object Shape1: TShape
+    Left = 109
+    Top = 135
+    Width = 65
+    Height = 65
+  end
+  object Bevel1: TBevel
+    Left = 176
+    Top = 200
+    Width = 50
+    Height = 50
+  end
+  object BitBtn1: TBitBtn
+    Left = 368
+    Top = 96
+    Width = 75
+    Height = 25
+    Caption = 'BitBtn1'
+    TabOrder = 0
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 205
+    Top = 31
+    Width = 121
+    Height = 21
+    TabOrder = 1
+    Text = 'MaskEdit1'
+  end
+  object StringGrid1: TStringGrid
+    Left = 277
+    Top = 127
+    Width = 320
+    Height = 120
+    TabOrder = 2
+  end
+  object DrawGrid1: TDrawGrid
+    Left = 117
+    Top = 279
+    Width = 320
+    Height = 120
+    TabOrder = 3
+  end
+  object ScrollBox1: TScrollBox
+    Left = 352
+    Top = 352
+    Width = 185
+    Height = 41
+    TabOrder = 4
+  end
+  object CheckListBox1: TCheckListBox
+    Left = 352
+    Top = 417
+    Width = 121
+    Height = 97
+    ItemHeight = 13
+    TabOrder = 5
+  end
+  object StaticText1: TStaticText
+    Left = 320
+    Top = 440
+    Width = 59
+    Height = 17
+    Caption = 'StaticText1'
+    TabOrder = 6
+  end
+  object LinkLabel1: TLinkLabel
+    Left = 544
+    Top = 432
+    Width = 53
+    Height = 17
+    Caption = 'LinkLabel1'
+    TabOrder = 7
+  end
+  object ControlBar1: TControlBar
+    Left = 392
+    Top = 520
+    Width = 100
+    Height = 50
+    TabOrder = 8
+  end
+  object ValueListEditor1: TValueListEditor
+    Left = 200
+    Top = 408
+    Width = 306
+    Height = 300
+    TabOrder = 9
+  end
+  object LabeledEdit1: TLabeledEdit
+    Left = 376
+    Top = 248
+    Width = 121
+    Height = 21
+    EditLabel.Width = 61
+    EditLabel.Height = 13
+    EditLabel.Caption = 'LabeledEdit1'
+    TabOrder = 10
+  end
+  object ButtonedEdit1: TButtonedEdit
+    Left = 576
+    Top = 176
+    Width = 121
+    Height = 21
+    TabOrder = 11
+    Text = 'ButtonedEdit1'
+  end
+  object ColorBox1: TColorBox
+    Left = 360
+    Top = 265
+    Width = 145
+    Height = 22
+    TabOrder = 12
+  end
+  object ColorListBox1: TColorListBox
+    Left = 285
+    Top = 479
+    Width = 121
+    Height = 97
+    TabOrder = 13
+  end
+  object CategoryButtons1: TCategoryButtons
+    Left = 112
+    Top = 312
+    ButtonFlow = cbfVertical
+    Categories = <>
+    RegularButtonColor = 14410210
+    SelectedButtonColor = 12502986
+    TabOrder = 14
+  end
+  object ButtonGroup1: TButtonGroup
+    Left = 184
+    Top = 120
+    Items = <>
+    TabOrder = 15
+  end
+  object DockTabSet1: TDockTabSet
+    Left = 136
+    Top = 72
+    Width = 185
+    Height = 21
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+  end
+  object TabSet1: TTabSet
+    Left = 53
+    Top = 199
+    Width = 185
+    Height = 21
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+  end
+  object FlowPanel1: TFlowPanel
+    Left = 856
+    Top = 87
+    Width = 185
+    Height = 41
+    Caption = 'FlowPanel1'
+    TabOrder = 18
+  end
+  object GridPanel1: TGridPanel
+    Left = 872
+    Top = 144
+    Width = 185
+    Height = 41
+    Caption = 'GridPanel1'
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <>
+    RowCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    TabOrder = 19
+  end
+  object CategoryPanelGroup1: TCategoryPanelGroup
+    Left = 0
+    Top = 0
+    Width = 81
+    Height = 693
+    VertScrollBar.Tracking = True
+    HeaderFont.Charset = DEFAULT_CHARSET
+    HeaderFont.Color = clWindowText
+    HeaderFont.Height = -11
+    HeaderFont.Name = 'Tahoma'
+    HeaderFont.Style = []
+    TabOrder = 20
+  end
+end

@@ -1,0 +1,33 @@
+unit Unit10;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.FileCtrl, Vcl.StdCtrls,
+  Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.TabNotBk, Vcl.Grids, Vcl.Outline;
+
+type
+  TForm10 = class(TForm)
+    Outline1: TOutline;
+    TabbedNotebook1: TTabbedNotebook;
+    Notebook1: TNotebook;
+    Header1: THeader;
+    FileListBox1: TFileListBox;
+    DirectoryListBox1: TDirectoryListBox;
+    DriveComboBox1: TDriveComboBox;
+    FilterComboBox1: TFilterComboBox;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form10: TForm10;
+
+implementation
+
+{$R *.dfm}
+
+end.

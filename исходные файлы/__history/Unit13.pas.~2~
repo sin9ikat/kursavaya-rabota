@@ -1,0 +1,51 @@
+unit Unit13;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Tabs, Vcl.DockTabSet,
+  Vcl.ButtonGroup, Vcl.CategoryButtons, Vcl.StdCtrls, Vcl.ValEdit, Vcl.CheckLst,
+  Vcl.Grids, Vcl.Mask, Vcl.Buttons;
+
+type
+  TForm13 = class(TForm)
+    BitBtn1: TBitBtn;
+    SpeedButton1: TSpeedButton;
+    MaskEdit1: TMaskEdit;
+    StringGrid1: TStringGrid;
+    DrawGrid1: TDrawGrid;
+    Image1: TImage;
+    Shape1: TShape;
+    Bevel1: TBevel;
+    ScrollBox1: TScrollBox;
+    CheckListBox1: TCheckListBox;
+    StaticText1: TStaticText;
+    LinkLabel1: TLinkLabel;
+    ControlBar1: TControlBar;
+    ValueListEditor1: TValueListEditor;
+    LabeledEdit1: TLabeledEdit;
+    ButtonedEdit1: TButtonedEdit;
+    ColorBox1: TColorBox;
+    ColorListBox1: TColorListBox;
+    CategoryButtons1: TCategoryButtons;
+    ButtonGroup1: TButtonGroup;
+    DockTabSet1: TDockTabSet;
+    TabSet1: TTabSet;
+    FlowPanel1: TFlowPanel;
+    GridPanel1: TGridPanel;
+    CategoryPanelGroup1: TCategoryPanelGroup;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form13: TForm13;
+
+implementation
+
+{$R *.dfm}
+
+end.

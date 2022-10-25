@@ -1,0 +1,95 @@
+unit Unit13;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Tabs, Vcl.DockTabSet,
+  Vcl.ButtonGroup, Vcl.CategoryButtons, Vcl.StdCtrls, Vcl.ValEdit, Vcl.CheckLst,
+  Vcl.Grids, Vcl.Mask, Vcl.Buttons, Vcl.Imaging.pngimage;
+
+type
+  TForm13 = class(TForm)
+    BitBtn1: TBitBtn;
+    MaskEdit1: TMaskEdit;
+    Image1: TImage;
+    Shape1: TShape;
+    Bevel1: TBevel;
+    ColorBox1: TColorBox;
+    Label1: TLabel;
+    Bevel2: TBevel;
+    Bevel3: TBevel;
+    Bevel4: TBevel;
+    Bevel5: TBevel;
+    Bevel6: TBevel;
+    Bevel7: TBevel;
+    Bevel8: TBevel;
+    Label2: TLabel;
+    Shape2: TShape;
+    Shape3: TShape;
+    Label3: TLabel;
+    Label4: TLabel;
+    Bevel10: TBevel;
+    Shape4: TShape;
+    Shape5: TShape;
+    Shape6: TShape;
+    Label5: TLabel;
+    Bevel11: TBevel;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    BitBtn4: TBitBtn;
+    BitBtn5: TBitBtn;
+    BitBtn6: TBitBtn;
+    BitBtn7: TBitBtn;
+    BitBtn8: TBitBtn;
+    BitBtn9: TBitBtn;
+    BitBtn10: TBitBtn;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    MaskEdit2: TMaskEdit;
+    Label10: TLabel;
+    Label11: TLabel;
+    MaskEdit3: TMaskEdit;
+    Bevel12: TBevel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Bevel9: TBevel;
+    Bevel13: TBevel;
+    Button3: TButton;
+    procedure ColorBox1Change(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form13: TForm13;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1, Unit3;
+
+
+
+procedure TForm13.Button3Click(Sender: TObject);
+begin
+Form1.Show;
+Form13.Close;
+end;
+
+procedure TForm13.ColorBox1Change(Sender: TObject);
+//изменение цвета формы
+begin
+form13.Color:=ColorBox1.Selected;
+end;
+
+
+end.

@@ -1,0 +1,182 @@
+unit Unit6;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm6 = class(TForm)
+    Label1: TLabel;
+    Edit1: TEdit;
+    Memo1: TMemo;
+    RadioButton1: TRadioButton;
+    ComboBox1: TComboBox;
+    GroupBox1: TGroupBox;
+    RadioGroup1: TRadioGroup;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Bevel1: TBevel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    CheckBox5: TCheckBox;
+    Label10: TLabel;
+    Button2: TButton;
+    Bevel3: TBevel;
+    Bevel4: TBevel;
+    GroupBox2: TGroupBox;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Bevel5: TBevel;
+    Bevel6: TBevel;
+    RadioGroup2: TRadioGroup;
+    Label14: TLabel;
+    Label15: TLabel;
+    Edit2: TEdit;
+    Button1: TButton;
+    Label16: TLabel;
+    Bevel7: TBevel;
+    ScrollBar1: TScrollBar;
+    Label17: TLabel;
+    Label18: TLabel;
+    ScrollBar3: TScrollBar;
+    Label19: TLabel;
+    Edit3: TEdit;
+    ComboBox2: TComboBox;
+    Label20: TLabel;
+    Bevel8: TBevel;
+    Bevel9: TBevel;
+    Bevel10: TBevel;
+    Bevel11: TBevel;
+    Label21: TLabel;
+    Label22: TLabel;
+    Label23: TLabel;
+    Label24: TLabel;
+    Bevel2: TBevel;
+    ListBox1: TListBox;
+    Edit4: TEdit;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Label25: TLabel;
+    Label26: TLabel;
+    Button3: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    procedure Button2Click(Sender: TObject);
+    procedure CheckBox2Click(Sender: TObject);
+    procedure RadioGroup2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure ScrollBar1Change(Sender: TObject);
+    procedure ComboBox2Change(Sender: TObject);
+    procedure ListBox1Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var                                             
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2, Unit1;
+
+procedure TForm6.Button1Click(Sender: TObject);
+//событие click для кнопки button, при нажатии на кнопку в компоненте edit2 отоброжался номер выделеленного в данный момент компонента  
+begin
+Edit2.Text:=IntToStr(RadioGroup2.ItemIndex);
+end;
+
+procedure TForm6.Button2Click(Sender: TObject);
+begin
+//выполняется проверка, если на компоненте CheackBox1(CheckBox1.Checked), то программу можно закрывать и она закроется, если же нет, то появится сообщение о том, что программу закрывать нельзя 
+if CheckBox1.Checked then
+Close
+else
+ShowMessage('Нельзя закрыть программу');
+end;
+
+procedure TForm6.Button3Click(Sender: TObject);
+begin
+Form1.Show;
+Form6.Close;
+end;
+
+procedure TForm6.Button4Click(Sender: TObject);
+//удаление выбраной строки в ListBox
+begin
+ListBox1.Items.Delete(ListBox1.ItemIndex);
+end;
+
+procedure TForm6.Button5Click(Sender: TObject);
+//кнопка для полной очистки listbox
+begin
+ListBox1.Clear;
+end;
+
+procedure TForm6.Button6Click(Sender: TObject);
+//добавление строки в ListBox с помощья компонента Edit
+begin
+ListBox1.Items.Add(Edit4.Text);
+end;
+
+procedure TForm6.Button7Click(Sender: TObject);
+begin
+Form2.Show;
+Form6.Close;
+end;
+
+procedure TForm6.Button8Click(Sender: TObject);
+begin
+Form6.Close;
+end;
+
+procedure TForm6.CheckBox2Click(Sender: TObject);
+//свойство Checked показывает, стоит ли флажок на компоненте CheckBox2, или нет 
+begin
+Button2.Enabled := not CheckBox2.Checked;
+end;
+
+procedure TForm6.ComboBox2Change(Sender: TObject);
+//
+begin
+ Edit3.Text := ComboBox2.Items.Strings[ComboBox2.ItemIndex];
+end;
+
+procedure TForm6.ListBox1Click(Sender: TObject);
+//когда  нажимаем на какую-нибудь из строк в listbox, то она высветится в edit
+begin
+Edit4.Text := ListBox1.Items.Strings[ListBox1.ItemIndex];
+end;
+
+procedure TForm6.RadioGroup2Click(Sender: TObject);
+//обращаяся к свойству ItemIndex компонента Radiogroup, мы получаем номер выделенного в данный момент компонента, необходимо преобразовать целое число в строку использую функцию IntToStr
+begin
+Label15.Caption:=IntToStr(RadioGroup2.ItemIndex);
+end;
+
+procedure TForm6.ScrollBar1Change(Sender: TObject);
+//событие change позволяющие отображать ширину прокрутки Scrollbar
+begin
+Label18.Caption := IntToStr(ScrollBar1.Position);
+end;
+
+end.

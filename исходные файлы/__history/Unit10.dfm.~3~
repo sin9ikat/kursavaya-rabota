@@ -1,0 +1,91 @@
+object Form10: TForm10
+  Left = 0
+  Top = 0
+  Caption = 'Form10'
+  ClientHeight = 693
+  ClientWidth = 1272
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Outline1: TOutline
+    Left = 488
+    Top = 224
+    Width = 121
+    Height = 97
+    ItemHeight = 13
+    TabOrder = 0
+    ItemSeparator = '\'
+  end
+  object TabbedNotebook1: TTabbedNotebook
+    Left = 680
+    Top = 200
+    Width = 300
+    Height = 250
+    TabFont.Charset = DEFAULT_CHARSET
+    TabFont.Color = clBtnText
+    TabFont.Height = -11
+    TabFont.Name = 'Tahoma'
+    TabFont.Style = []
+    TabOrder = 1
+    object TTabPage
+      Left = 4
+      Top = 24
+      Caption = 'Default'
+    end
+  end
+  object Notebook1: TNotebook
+    Left = 264
+    Top = 288
+    Width = 150
+    Height = 150
+    TabOrder = 2
+    object TPage
+      Left = 0
+      Top = 0
+      Caption = 'Default'
+    end
+  end
+  object Header1: THeader
+    Left = 320
+    Top = 136
+    Width = 250
+    Height = 25
+    TabOrder = 3
+  end
+  object FileListBox1: TFileListBox
+    Left = 136
+    Top = 96
+    Width = 145
+    Height = 97
+    ItemHeight = 13
+    TabOrder = 4
+  end
+  object DirectoryListBox1: TDirectoryListBox
+    Left = 72
+    Top = 264
+    Width = 145
+    Height = 97
+    TabOrder = 5
+  end
+  object DriveComboBox1: TDriveComboBox
+    Left = 72
+    Top = 392
+    Width = 145
+    Height = 19
+    TabOrder = 6
+  end
+  object FilterComboBox1: TFilterComboBox
+    Left = 72
+    Top = 429
+    Width = 145
+    Height = 21
+    TabOrder = 7
+  end
+end

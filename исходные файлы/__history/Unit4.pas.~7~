@@ -1,0 +1,46 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.MPlayer;
+
+type
+  TForm4 = class(TForm)
+    PaintBox1: TPaintBox;
+    Button1: TButton;
+    Bevel1: TBevel;
+    Label1: TLabel;
+    MediaPlayer1: TMediaPlayer;
+    Panel1: TPanel;
+    Bevel2: TBevel;
+    Label2: TLabel;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+uses MainUnit;
+
+procedure TForm4.Button1Click(Sender: TObject);
+begin
+  with PaintBox1, canvas do
+    begin
+    PaintBox1.Canvas.Pen.Color:=clRed;
+    PaintBox1.Canvas.Pen.Width:=5;
+    PaintBox1.Canvas.Ellipse (5,5,PaintBox1.Width-5,PaintBox1.Height-5);
+    end;
+end;
+
+end.

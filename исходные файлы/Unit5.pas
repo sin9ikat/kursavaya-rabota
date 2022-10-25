@@ -1,0 +1,39 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls, Vcl.ToolWin;
+
+type
+  TForm5 = class(TForm)
+    TabControl1: TTabControl;
+    PageControl1: TPageControl;
+    TrackBar1: TTrackBar;
+    ProgressBar1: TProgressBar;
+    UpDown1: TUpDown;
+    HotKey1: THotKey;
+    Animate1: TAnimate;
+    DateTimePicker1: TDateTimePicker;
+    MonthCalendar1: TMonthCalendar;
+    TreeView1: TTreeView;
+    ListView1: TListView;
+    StatusBar1: TStatusBar;
+    ToolBar1: TToolBar;
+    PageScroller1: TPageScroller;
+    ComboBoxEx1: TComboBoxEx;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+end.
